@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Top Navigation</title>
+<style>
+.cdiv
+{
+ background-color:black;
+ overflow:hidden;
+}
+
+.cdiv a
+{
+ padding:10px 16px;
+ display:block;
+ float:left;
+ color:white;
+ text-decoration:none;
+ font-size:20px;
+ font-family:arial;
+}
+#a1
+{
+ float:right;
+ margin-right:10px;
+}
+.cdiv a:hover, .dropdown:hover .dropbtn
+{
+ background-color:green;
+}
+.dropdown
+{
+ float:left;
+}
+.dropdown .dropbtn
+{
+ padding:10px 16px;
+ color:white;
+ background-color:black;
+ border:none;
+ outline:none;
+ font-size:20px;
+}
+.dropcontent
+{
+ position:absolute;
+ display:none;
+ background-color:#f9f9f9;
+ width:150px;
+}
+.dropcontent a
+{
+ display:block;
+ color:black;
+ padding:12px 16px;
+ float:none;
+}
+.dropdown:hover .dropcontent
+{
+ display:block;
+}
+.dropcontent a:hover
+{
+ background-color:#ddd;
+ color:black;
+}
+</style>
+</head>
+<body>
+<div class="cdiv">
+<a href="#">Home</a>
+<a href="#">News</a>
+<div class="dropdown">
+<button class="dropbtn">Mobile</button>
+<div class="dropcontent">
+<a href="#">Apple</a>
+<a href="#">Samsung</a>
+<a href="#">Vivo</a>
+</div>
+</div>
+<a href="#">About</a>
+<a href="#" id="a1">Login</a>
+</div>
+</body>
+</html>
